@@ -266,6 +266,9 @@ button {
 button a {
   text-decoration: none;
 }
+button a:visited {
+  color: #2C2C2C;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -335,7 +338,7 @@ nav ul a:hover, nav ul a:focus {
 }
 .home-header h1 {
   position: absolute;
-  bottom: 0;
+  bottom: 25px;
   width: 100%;
   z-index: 1;
 }
@@ -344,19 +347,22 @@ nav ul a:hover, nav ul a:focus {
   z-index: 0;
   right: 0;
   bottom: -200px;
-  -webkit-box-shadow: 0 0 0 4em #FDFA69;
-          box-shadow: 0 0 0 4em #FDFA69;
+  -webkit-box-shadow: 0 0 0 3em #FDFA69;
+          box-shadow: 0 0 0 3em #FDFA69;
   margin: 4em 0;
 }
 
-h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 80px;
-  line-height: 92px;
+.about {
+  background-color: #EFFDF3;
+  padding: 200px 0;
+  text-align: center;
 }
-
-h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 80px;
-  line-height: 92px;
+.about p {
+  margin: 0 100px;
+  padding-bottom: 40px;
+}
+.about button {
+  background-color: #4CEEA7;
+  border: none;
+  padding: 5px 20px;
 }

@@ -25,6 +25,9 @@ button {
     a {
         text-decoration: none;
     }
+    a:visited {
+        color: $text-color;
+    }
 }
 
 body {

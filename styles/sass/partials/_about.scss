@@ -1,0 +1,16 @@
+@use '../variables' as *;
+
+.about {
+    background-color: $section-secondary;
+    padding: 200px 0;
+    text-align: center;
+    p {
+        margin: 0 100px;
+        padding-bottom: 40px;
+    }
+    button {
+        background-color: $button;
+        border: none;
+        padding: 5px 20px;
+    }
+}

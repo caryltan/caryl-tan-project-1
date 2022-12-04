@@ -8,7 +8,7 @@
     position: relative;
     h1 {
         position: absolute;
-        bottom: 0;
+        bottom: 25px;
         width: 100%;
         z-index: 1;
     }
@@ -17,7 +17,7 @@
         z-index: 0;
         right: 0;
         bottom: -200px;
-        box-shadow: 0 0 0 4em $box-shadow;
+        box-shadow: 0 0 0 3em $box-shadow;
         margin: 4em 0;
     }
 }
