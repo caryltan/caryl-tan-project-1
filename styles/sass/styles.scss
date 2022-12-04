@@ -1,3 +1,15 @@
+// Setup
 @use 'setup';
+@use 'commons';
 @use 'responsive';
 @use 'variables';
+@use 'mixins';
+
+
+// Partials
+@use './partials/nav';
+
+// Pages
+@use 'contact';
+@use 'blog';
+

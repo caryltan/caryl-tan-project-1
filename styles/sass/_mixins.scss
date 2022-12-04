@@ -1,0 +1,10 @@
+@use "variables";
+@use "variables" as *;
+
+// Basic Font
+@mixin font-size($size-value) {
+    font-size: $size-value;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: $text-color;
+  }
