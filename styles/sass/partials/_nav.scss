@@ -1,0 +1,24 @@
+@use  '../variables' as *;
+@use  '../mixins' as *; 
+
+
+
+nav {
+    @include font-size(20px);
+    line-height: 29px;
+    letter-spacing: 1px;
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;  
+        margin-top: 0;
+        padding-top: 30px;
+        li {
+            margin-left: 50px;
+        }
+        a:hover, a:focus {
+            border-bottom: 2px solid $link-hover;
+            padding-bottom: 5px;
+        }
+    }
+}

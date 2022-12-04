@@ -1,14 +1,14 @@
 @use  'variables' as *;
 @use  'mixins' as *;
 
-
+// Headings
 h1 {
-    @include font-size(222px);
+    @include font-size(138px);
     text-align: center;
 }
 
 h2 {
-    @include font-size(32px);
+    @include font-size(42px);
     letter-spacing: 1px;
 }
 
@@ -22,12 +22,9 @@ button {
     line-height: 32px;
     letter-spacing: 1px;
     text-align: center;
-}
-
-nav {
-    @include font-size(20px);
-    line-height: 29px;
-    letter-spacing: 1px;
+    a {
+        text-decoration: none;
+    }
 }
 
 body {
@@ -39,6 +36,18 @@ body {
 
 .wrapper {
     width: 85%;
+    margin: 0 auto;
+}
+
+// ul stylings
+ul {
+    list-style: none;
+    a {
+        text-decoration: none;
+    }
+    a:visited {
+        color: $text-color;
+    } 
 }
 
 // Email
