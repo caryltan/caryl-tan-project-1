@@ -1,6 +1,23 @@
+@use '../variables' as *;
+
 .home-header {
     background-image: url(../assets/header-image.jpg);
     background-size: cover;
     width: 100%;
     height: 100vh;
+    position: relative;
+    h1 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    .header-box-image {
+        position: absolute;
+        z-index: 0;
+        right: 0;
+        bottom: -200px;
+        box-shadow: 0 0 0 4em $box-shadow;
+        margin: 4em 0;
+    }
 }
