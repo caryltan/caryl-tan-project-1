@@ -10,14 +10,6 @@
     .image-right {
         box-shadow: -3em 3em 0 $box-shadow;
     }
-    .text-section {
-        &.section-right {
-            padding: 100px 100px 0 0;
-        }
-        &.section-left {
-            padding: 100px 0 0 100px;
-        }
-    }
     .image-section {
         flex-basis: 40%;
         position: relative;
@@ -30,6 +22,19 @@
     }
     .text-section {
         flex-basis: 40%;
+        display: flex;
+        flex-direction: column;
+        button {
+            margin-top: 10px;
+        }
+        &.section-right {
+            padding: 100px 100px 0 0;
+            align-items: flex-start;
+        }
+        &.section-left {
+            padding: 100px 0 0 100px;
+            align-items: flex-end;
+        }
     }
     img {
         width: 100%;

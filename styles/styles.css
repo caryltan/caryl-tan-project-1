@@ -381,12 +381,6 @@ nav ul a:hover, nav ul a:focus {
   -webkit-box-shadow: -3em 3em 0 #FDFA69;
           box-shadow: -3em 3em 0 #FDFA69;
 }
-.read-more .text-section.section-right {
-  padding: 100px 100px 0 0;
-}
-.read-more .text-section.section-left {
-  padding: 100px 0 0 100px;
-}
 .read-more .image-section {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
@@ -401,6 +395,28 @@ nav ul a:hover, nav ul a:focus {
 .read-more .text-section {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.read-more .text-section button {
+  margin-top: 10px;
+}
+.read-more .text-section.section-right {
+  padding: 100px 100px 0 0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.read-more .text-section.section-left {
+  padding: 100px 0 0 100px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .read-more img {
   width: 100%;
