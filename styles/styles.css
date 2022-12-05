@@ -281,7 +281,7 @@ body {
 }
 
 .wrapper {
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -302,6 +302,13 @@ ul a:visited {
   color: #2C2C2C;
   text-transform: uppercase;
   letter-spacing: 1.1px;
+}
+
+/* Font Awesome Icon Styling */
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
 nav {
@@ -407,13 +414,13 @@ nav ul a:hover, nav ul a:focus {
   margin-top: 10px;
 }
 .read-more .text-section.section-right {
-  padding: 100px 100px 0 0;
+  padding: 50px 100px 0 0;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
 .read-more .text-section.section-left {
-  padding: 100px 0 0 100px;
+  padding: 50px 0 0 100px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -421,4 +428,67 @@ nav ul a:hover, nav ul a:focus {
 .read-more img {
   width: 100%;
   height: auto;
+}
+
+.links-section {
+  background-color: #EFFDF3;
+  padding: 70px 0 30px 0;
+}
+.links-section h3 {
+  margin: 10px 0;
+}
+.links-section .top-picks-icon::before {
+  font: var(--fa-font-solid);
+  content: "\f030";
+  padding: 8px;
+  font-size: 0.75em;
+  background: #4CEEA7;
+  border-radius: 50%;
+  margin-left: -60px;
+  position: absolute;
+}
+.links-section .community-icon::before {
+  font: var(--fa-font-solid);
+  content: "\f0c0";
+  padding: 8px;
+  font-size: 0.75em;
+  background: #4CEEA7;
+  border-radius: 50%;
+  margin-left: -60px;
+  position: absolute;
+}
+.links-section .blog-icon::before {
+  font: var(--fa-font-solid);
+  content: "\f15b";
+  padding: 8px;
+  font-size: 0.75em;
+  background: #4CEEA7;
+  border-radius: 50%;
+  margin-left: -60px;
+  position: absolute;
+}
+.links-section .in-touch-icon::before {
+  font: var(--fa-font-solid);
+  content: "\f095";
+  padding: 8px;
+  font-size: 0.75em;
+  background: #4CEEA7;
+  border-radius: 50%;
+  margin-left: -60px;
+  position: absolute;
+}
+.links-section ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.links-section ul li {
+  -ms-flex-preferred-size: 46%;
+      flex-basis: 46%;
+  padding: 50px 0;
 }

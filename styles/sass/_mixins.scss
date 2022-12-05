@@ -8,3 +8,15 @@
     color: $text-color;
     text-transform: uppercase;
   }
+
+// Icons
+@mixin icon-content($icon-content) {
+    font: var(--fa-font-solid);
+    content: $icon-content;
+    padding: 8px;
+    font-size: 0.75em;
+    background: $round-icon;
+    border-radius: 50%;
+    margin-left: -60px;
+    position: absolute;
+}

@@ -1,0 +1,31 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.links-section {
+    background-color: $section-secondary;
+    padding: 70px 0 30px 0;
+    h3 {
+        margin: 10px 0;
+    }
+    .top-picks-icon::before {
+        @include icon-content('\f030');
+    }
+    .community-icon::before {
+        @include icon-content('\f0c0');
+    }
+    .blog-icon::before {
+        @include icon-content('\f15b');
+    }
+    .in-touch-icon::before {
+        @include icon-content('\f095');
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li {
+            flex-basis: 46%;
+            padding: 50px 0;
+        }
+    }
+}

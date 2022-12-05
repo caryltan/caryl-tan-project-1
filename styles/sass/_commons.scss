@@ -42,7 +42,7 @@ body {
 }
 
 .wrapper {
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -62,3 +62,10 @@ ul {
     @include font-size(26px);
     letter-spacing: 1.1px;
 }
+
+/* Font Awesome Icon Styling */
+  .icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
