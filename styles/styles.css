@@ -262,6 +262,9 @@ button {
   line-height: 32px;
   letter-spacing: 1px;
   text-align: center;
+  background-color: #4CEEA7;
+  border: none;
+  padding: 5px 20px;
 }
 button a {
   text-decoration: none;
@@ -361,8 +364,45 @@ nav ul a:hover, nav ul a:focus {
   margin: 0 100px;
   padding-bottom: 40px;
 }
-.about button {
-  background-color: #4CEEA7;
-  border: none;
-  padding: 5px 20px;
+
+.read-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.read-more .image-left {
+  -webkit-box-shadow: 3em 3em 0 #FDFA69;
+          box-shadow: 3em 3em 0 #FDFA69;
+}
+.read-more .image-right {
+  -webkit-box-shadow: -3em 3em 0 #FDFA69;
+          box-shadow: -3em 3em 0 #FDFA69;
+}
+.read-more .text-section.section-right {
+  padding: 100px 100px 0 0;
+}
+.read-more .text-section.section-left {
+  padding: 100px 0 0 100px;
+}
+.read-more .image-section {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  position: relative;
+}
+.read-more .image-section.section-right {
+  bottom: -50px;
+}
+.read-more .image-section.section-left {
+  top: -50px;
+}
+.read-more .text-section {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+.read-more img {
+  width: 100%;
+  height: auto;
 }
