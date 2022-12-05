@@ -1,0 +1,36 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.section-break {
+    margin: 0;
+    img {
+        width: 100%;
+        display: inline;
+        vertical-align: bottom;
+    }
+}
+
+.month-profile {
+    background-color: $section-secondary;
+    padding: 100px 0;
+    margin: 0;
+    .wrapper {
+        display: flex;
+    }
+    .square-image {
+        flex-basis: 30%;
+        img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            box-shadow: 2em 2em 0 $box-shadow;
+        }
+    }
+    .month-text-section {
+        flex-basis: 70%;
+        padding-left: 50px;
+    }
+    button {
+        margin-top: 25px;
+    }
+}

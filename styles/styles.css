@@ -311,6 +311,14 @@ ul a:visited {
   -webkit-font-smoothing: antialiased;
 }
 
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
 nav {
   font-size: 20px;
   font-family: "Playfair Display", serif;
@@ -491,4 +499,43 @@ nav ul a:hover, nav ul a:focus {
   -ms-flex-preferred-size: 46%;
       flex-basis: 46%;
   padding: 50px 0;
+}
+
+.section-break {
+  margin: 0;
+}
+.section-break img {
+  width: 100%;
+  display: inline;
+  vertical-align: bottom;
+}
+
+.month-profile {
+  background-color: #EFFDF3;
+  padding: 100px 0;
+  margin: 0;
+}
+.month-profile .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.month-profile .square-image {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+.month-profile .square-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  -webkit-box-shadow: 2em 2em 0 #FDFA69;
+          box-shadow: 2em 2em 0 #FDFA69;
+}
+.month-profile .month-text-section {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  padding-left: 50px;
+}
+.month-profile button {
+  margin-top: 25px;
 }
