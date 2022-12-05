@@ -539,3 +539,23 @@ nav ul a:hover, nav ul a:focus {
 .month-profile button {
   margin-top: 25px;
 }
+
+.gallery {
+  padding: 75px 0;
+}
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+.gallery ul li {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+.gallery ul li img {
+  width: 100%;
+}
