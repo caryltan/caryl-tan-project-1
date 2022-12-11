@@ -1,0 +1,84 @@
+@use './variables' as *;
+@use  './mixins' as *;
+
+.contact-body {
+    background: $section-secondary;
+}
+
+.contact-main-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-info {
+    .side-info-container {
+        position: relative;
+        top: 80%;
+    }
+    .contact-info-text {
+        line-height: 15px;
+    }
+}
+
+.contact-wrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding: 0;
+    margin: 0;
+}
+
+//contact form styling
+.contact-form {
+    background: $section-primary;
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 25px;
+    margin-top: 100px;
+    margin-right: 2.5em;
+    box-shadow: -3em 3em 0 $box-shadow;
+    form {
+        margin: 50px;
+    }
+    .form-name-email {
+        display: flex;
+        justify-content: space-between;
+        input {
+            border: none;
+            border-bottom: 2px solid $form-border;
+            background-color: $section-primary;
+            line-height: 3em;
+            text-indent: 1em;
+            width: 100%;
+        }
+        .message-user {
+            flex-basis: 45%;
+        }
+    }
+}
+
+.submit-message {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 80px 0;
+    textarea {
+        background-color: $section-primary;
+        border: 2px solid $form-border;
+        border-radius: 4px;
+        line-height: 3em;
+        text-indent: 1em;
+    }
+    button {
+        margin-top: 40px;
+    }
+}
+
+.contact-footer {
+    margin-top: 200px;
+}
