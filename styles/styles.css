@@ -589,10 +589,10 @@ nav ul a:hover, nav ul a:focus {
 }
 
 .great-locations .great-locations-text {
-  padding: 100px 150px 50px 50px;
+  padding: 50px;
   -webkit-box-shadow: -0.5em 0.5em 0 #FDFA69;
           box-shadow: -0.5em 0.5em 0 #FDFA69;
-  margin-left: -2.5em;
+  margin: 0 2.5em 0 -2.5em;
 }
 .great-locations .header-blog-post-image {
   z-index: 0;
@@ -602,6 +602,13 @@ nav ul a:hover, nav ul a:focus {
   margin: 0;
   width: 100%;
   height: auto;
+}
+.great-locations .blog-title {
+  margin-bottom: 15px;
+}
+.great-locations .blog-date {
+  margin: 0;
+  padding-bottom: 50px;
 }
 
 .blog-contact-main-body {
@@ -636,6 +643,8 @@ nav ul a:hover, nav ul a:focus {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
   width: 100%;
+  position: relative;
+  top: -450px;
 }
 
 .blog-h3 {
@@ -650,4 +659,11 @@ nav ul a:hover, nav ul a:focus {
   width: 1em;
   margin-left: -2.5em;
   padding-right: 1.5em;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #2C2C2C;
 }
