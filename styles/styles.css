@@ -588,14 +588,19 @@ nav ul a:hover, nav ul a:focus {
   width: 100%;
 }
 
-.header-blog-post-image {
-  position: absolute;
+.great-locations .great-locations-text {
+  padding: 100px 150px 50px 50px;
+  -webkit-box-shadow: -0.5em 0.5em 0 #FDFA69;
+          box-shadow: -0.5em 0.5em 0 #FDFA69;
+  margin-left: -2.5em;
+}
+.great-locations .header-blog-post-image {
   z-index: 0;
   right: 0;
   -webkit-box-shadow: -3em 3em 0 #FDFA69;
           box-shadow: -3em 3em 0 #FDFA69;
-  margin: 4em 0;
-  width: 1000px;
+  margin: 0;
+  width: 100%;
   height: auto;
 }
 
@@ -609,10 +614,11 @@ nav ul a:hover, nav ul a:focus {
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
   position: relative;
+  margin-right: 195px;
 }
 .blog-contact-main-body .side-info .side-info-text {
   background-color: #FAFAFA;
-  padding: 375px 25px 0 25px;
+  padding: 425px 25px 0 25px;
   margin-left: 150px;
 }
 .blog-contact-main-body .side-info .side-blog-image {
@@ -629,21 +635,7 @@ nav ul a:hover, nav ul a:focus {
 .blog-contact-main-body .blog-page-content {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
-  padding: 300px 0 0 195px;
-}
-
-.great-locations {
-  position: relative;
-}
-.great-locations .great-locations-floating-image {
-  position: absolute;
-  top: -770px;
-  right: 0;
-}
-.great-locations .great-locations-text {
-  padding: 100px 150px 50px 50px;
-  -webkit-box-shadow: -0.5em 0.5em 0 #FDFA69;
-          box-shadow: -0.5em 0.5em 0 #FDFA69;
+  width: 100%;
 }
 
 .blog-h3 {

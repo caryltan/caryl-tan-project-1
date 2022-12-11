@@ -1,14 +1,20 @@
 @use './variables' as *;
 @use  './mixins' as *;
 
-.header-blog-post-image {
-    position: absolute;
-    z-index: 0;
-    right: 0;
-    box-shadow: -3em 3em 0 $box-shadow;
-    margin: 4em 0;
-    width: 1000px;
-    height: auto;
+.great-locations {
+    .great-locations-text {
+        padding: 100px 150px 50px 50px;
+        box-shadow: -0.5em 0.5em 0 $box-shadow;
+        margin-left: -2.5em;
+    }
+    .header-blog-post-image {
+        z-index: 0;
+        right: 0;
+        box-shadow: -3em 3em 0 $box-shadow;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
 }
 
 .blog-contact-main-body {
@@ -17,9 +23,10 @@
     .side-info {
         flex-basis: 30%;
         position: relative;
+        margin-right: 195px;
         .side-info-text {
             background-color: $section-primary;
-            padding: 375px 25px 0 25px;
+            padding: 425px 25px 0 25px;
             margin-left: 150px;
         }
         .side-blog-image {
@@ -36,22 +43,10 @@
     }
     .blog-page-content {
         flex-basis: 70%;
-        padding: 300px 0 0 195px;
+        width: 100%;
     }
 }
 
-.great-locations {
-    position: relative;
-    .great-locations-floating-image {
-        position: absolute;
-        top: -770px;
-        right: 0;
-    }
-    .great-locations-text {
-        padding: 100px 150px 50px 50px;
-        box-shadow: -0.5em 0.5em 0 $box-shadow;
-    }
-}
 
 //adjusted h3 styling since font is smaller than indicated on style guide
 .blog-h3 {
