@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -320,6 +321,10 @@ footer {
   width: 100%;
 }
 
+.blog-contact-body {
+  background-color: #EFFDF3;
+}
+
 nav {
   font-size: 20px;
   font-family: "Playfair Display", serif;
@@ -376,6 +381,11 @@ nav ul a:hover, nav ul a:focus {
   background-size: cover;
   width: 100%;
   height: 100vh;
+}
+.blog-header .blog-contact-h1-container {
+  width: 100%;
+  text-align: center;
+  padding-top: 150px;
 }
 
 .blog-contact-heading {
@@ -582,12 +592,15 @@ nav ul a:hover, nav ul a:focus {
   position: absolute;
   z-index: 0;
   right: 0;
-  -webkit-box-shadow: 0 0 0 3em #FDFA69;
-          box-shadow: 0 0 0 3em #FDFA69;
+  -webkit-box-shadow: -3em 3em 0 #FDFA69;
+          box-shadow: -3em 3em 0 #FDFA69;
   margin: 4em 0;
+  width: 1000px;
+  height: auto;
 }
 
 .blog-contact-main-body {
+  padding-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -595,16 +608,54 @@ nav ul a:hover, nav ul a:focus {
 .blog-contact-main-body .side-info {
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
+  position: relative;
+}
+.blog-contact-main-body .side-info .side-info-text {
+  background-color: #FAFAFA;
+  padding: 375px 25px 0 25px;
+  margin-left: 150px;
+}
+.blog-contact-main-body .side-info .side-blog-image {
+  width: 95%;
+  position: absolute;
+  top: -25px;
+}
+.blog-contact-main-body .side-info .blog-about {
+  padding-bottom: 25px;
+}
+.blog-contact-main-body .side-info .blog-recent-posts {
+  padding-bottom: 15px;
 }
 .blog-contact-main-body .blog-page-content {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
+  padding: 300px 0 0 195px;
 }
 
 .great-locations {
-  background-color: #EFFDF3;
+  position: relative;
+}
+.great-locations .great-locations-floating-image {
+  position: absolute;
+  top: -770px;
+  right: 0;
+}
+.great-locations .great-locations-text {
+  padding: 100px 150px 50px 50px;
+  -webkit-box-shadow: -0.5em 0.5em 0 #FDFA69;
+          box-shadow: -0.5em 0.5em 0 #FDFA69;
 }
 
-.blog-section {
-  background-color: #EFFDF3;
+.blog-h3 {
+  font-size: 25px;
+}
+
+.blog-post-list li::before {
+  content: "•";
+  color: #4CEEA7;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -2.5em;
+  padding-right: 1.5em;
 }

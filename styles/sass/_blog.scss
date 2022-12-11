@@ -5,27 +5,78 @@
     position: absolute;
     z-index: 0;
     right: 0;
-    box-shadow: 0 0 0 3em $box-shadow;
+    box-shadow: -3em 3em 0 $box-shadow;
     margin: 4em 0;
+    width: 1000px;
+    height: auto;
 }
 
 .blog-contact-main-body {
+    padding-top: 100px;
     display: flex;
     .side-info {
         flex-basis: 30%;
+        position: relative;
+        .side-info-text {
+            background-color: $section-primary;
+            padding: 375px 25px 0 25px;
+            margin-left: 150px;
+        }
+        .side-blog-image {
+            width: 95%;
+            position: absolute;
+            top: -25px;
+        }
+        .blog-about {
+            padding-bottom: 25px;
+        }
+        .blog-recent-posts {
+            padding-bottom: 15px;
+        }
     }
     .blog-page-content {
         flex-basis: 70%;
+        padding: 300px 0 0 195px;
     }
 }
 
-
-
 .great-locations {
-    background-color: $section-secondary;
-
+    position: relative;
+    .great-locations-floating-image {
+        position: absolute;
+        top: -770px;
+        right: 0;
+    }
+    .great-locations-text {
+        padding: 100px 150px 50px 50px;
+        box-shadow: -0.5em 0.5em 0 $box-shadow;
+    }
 }
 
+//adjusted h3 styling since font is smaller than indicated on style guide
+.blog-h3 {
+    font-size: 25px;
+}
+
+//recent posts list bullet styling
+.blog-post-list {
+    li::before {
+        content: "\2022";  
+        color: $bullet-color; 
+        font-weight: bold; 
+        display: inline-block; 
+        width: 1em; 
+        margin-left: -2.5em;
+        padding-right: 1.5em;
+      }
+}
+
+
+
+
+
+
+
 .blog-section {
-    background-color: $section-secondary;
+    
 }
