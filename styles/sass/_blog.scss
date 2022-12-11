@@ -1,0 +1,31 @@
+@use './variables' as *;
+@use  './mixins' as *;
+
+.header-blog-post-image {
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    box-shadow: 0 0 0 3em $box-shadow;
+    margin: 4em 0;
+}
+
+.blog-contact-main-body {
+    display: flex;
+    .side-info {
+        flex-basis: 30%;
+    }
+    .blog-page-content {
+        flex-basis: 70%;
+    }
+}
+
+
+
+.great-locations {
+    background-color: $section-secondary;
+
+}
+
+.blog-section {
+    background-color: $section-secondary;
+}
