@@ -1,6 +1,10 @@
 @use './variables' as *;
 @use  './mixins' as *;
 
+.blog-contact-body {
+    margin-bottom: -450px;
+}
+
 .great-locations {
     .great-locations-text {
         padding: 50px;
@@ -56,12 +60,6 @@
     }
 }
 
-
-//adjusted h3 styling since font is smaller than indicated on style guide
-.blog-h3 {
-    font-size: 25px;
-}
-
 //recent posts list bullet styling
 .blog-post-list {
     li::before {
@@ -75,9 +73,78 @@
       }
 }
 
+//blog comment section styling
+.blog-comment-section {
+    padding: 50px 50px 50px 0;
+    margin-right: 2.5em;
+    .blog-comment {
+        display: flex;
+        padding: 25px 0;
+        .blog-comment-image-container {
+            width: 100%;
+            flex-basis: 10%;
+            padding-right: 25px;
+        }
+        .blog-comment-text-container {
+            flex-basis: 90%;
+            p {
+                margin-top: -5px;
+            }
+        }
+    }
+}
+
+//blog comment form styling
+.post-comment-form {
+    display: flex;
+    flex-direction: column;
+    padding-right: 25px;
+    margin-right: 2.5em;
+    .form-name-email {
+        display: flex;
+        justify-content: space-between;
+        input {
+            border: none;
+            border-bottom: 2px solid $form-border;
+            background-color: $section-secondary;
+            line-height: 3em;
+            text-indent: 1em;
+            width: 100%;
+        }
+        .comment-user {
+            flex-basis: 45%;
+        }
+    }
+}
+
+.submit-comment {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    textarea {
+        background-color: $section-secondary;
+        border: 2px solid $form-border;
+        border-radius: 4px;
+        line-height: 3em;
+        text-indent: 1em;
+    }
+    button {
+        margin-top: 40px;
+    }
+}
+
+//page specific commons
 a {
     text-decoration: none;
     &:visited {
         color: $text-color;
     }
+}
+
+.blog-h3 {
+    font-size: 25px;
+} //adjusted h3 styling since font is smaller than indicated on style guide
+
+.blog-footer {
+    top: -450px;
 }

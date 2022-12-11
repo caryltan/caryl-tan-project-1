@@ -57,41 +57,50 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt tempore nam quam commodi officia voluptas, vel amet nisi illum consequatur corrupti reprehenderit nulla natus repellat maxime qui recusandae et accusantium possimus, explicabo iste quo. Laboriosam vitae quidem deserunt atque temporibus incidunt, eos a commodi tenetur, non saepe corporis dolorum praesentium enim facere sequi aut autem asperiores expedita quod exercitationem similique illo repellendus excepturi. Amet officia ad quibusdam libero numquam molestiae iusto ducimus quod, corrupti provident cupiditate dolor magni perferendis necessitatibus nisi beatae ipsam aperiam mollitia ullam cumque saepe quis natus id? Neque sequi facere ipsum nam rerum totam possimus impedit?</p>
                 </div>
             </section>
-            <section class="blog-comments">
+            <section class="blog-comment-section">
                 <h2>Comments</h2>
-                <div class="comment-one">
-                    <img src="./assets/comment-1.jpg" alt="Profile picture of a comment by Jeremy">
-                    <p>Tuesday October 9th, 2018 by Jeremy</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In doloribus quisquam repudiandae quidem aspernatur ratione, corrupti neque, quaerat perferendis quam cum perspiciatis consectetur repellendus dolorem magni veniam voluptas! Cumque, consequatur.</p>
+                <div class="blog-comment">
+                    <div class="blog-comment-image-container">
+                        <img src="./assets/comment-1.jpg" alt="Profile picture of a comment by Jeremy">
+                    </div>
+                    <div class="blog-comment-text-container">
+                        <p>Tuesday October 9th, 2018 by Jeremy</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, aut in. Maxime velit quos nihil nisi corporis necessitatibus ratione vitae explicabo tempore quod? Ea delectus obcaecati cumque accusantium fugiat aut quidem ullam voluptas, dolorum ipsam iusto nobis libero? Ad neque optio dolorum, ipsum laborum perspiciatis fugiat recusandae numquam ratione quos.</p>
+                    </div>
                 </div>
-                <div class="comment-two">
-                    <img src="./assets/comment-2.jpg" alt="Profile picture of a comment by Julia">
-                    <p>Wednesday October 10th, 2018 by Julia</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In doloribus quisquam repudiandae quidem aspernatur ratione, corrupti neque, quaerat perferendis quam cum perspiciatis consectetur repellendus dolorem magni veniam voluptas! Cumque, consequatur.</p>
+                <div class="blog-comment">
+                    <div class="blog-comment-image-container">
+                        <img src="./assets/comment-2.jpg" alt="Profile picture of a comment by Julia">
+                    </div>
+                    <div class="blog-comment-text-container">
+                        <p>Wednesday October 10th, 2018 by Julia</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, quidem consectetur. Soluta in, dolore quidem placeat ea, vero nihil, reprehenderit provident illum error facere voluptate quibusdam rerum! Impedit, nihil. Nihil tenetur aliquam iste nobis laudantium ipsam reprehenderit error? Est, pariatur laboriosam quis nisi voluptas natus delectus eveniet temporibus. Nulla, consectetur?</p>
+                    </div>
                 </div>
             </section>
             <section class="post-comment-form">
                 <form action="#" method="#" name="post-comment">
 
-                    <div class="comment-name">
-                        <label for="name">Name</label>
-                        <input type="text" id="comment-name" name="comment-name" required="true" placeholder="Name">
-                    </div> <!--.comment-name end-->
-
-                    <div class="comment-email">
-                        <label for="email-address">Email address</label>
-                        <input type="text" id="comment-email-address" name="comment-email-address" required="true" placeholder="Email address">
-                    </div> <!--comment-email end-->
-
-                    <label for="comment-field">Comment</label>
-                    <textarea name="comment-field" id="comment-field" cols="30" rows="10" minlength="5" maxlength="200">Comment</textarea><!--comment-field end--> 
-
-                    <button type="post-comment">Comment</button>
+                    <div class="form-name-email">
+                        <div class="comment-user">
+                            <label for="name"></label>
+                            <input type="text" id="comment-name" name="comment-name" required="true" placeholder="Name">
+                        </div> 
+                        <div class="comment-user">
+                            <label for="email-address"></label>
+                            <input type="text" id="comment-email-address" name="comment-email-address" required="true" placeholder="Email address">
+                        </div> 
+                    </div>
+                    <div class="submit-comment">
+                        <label for="comment-field"></label>
+                        <textarea name="comment-field" id="comment-field" cols="30" rows="5" minlength="5" maxlength="200" placeholder="Comment"></textarea><!--comment-field end--> 
+                        <button type="post-comment">Post Comment</button>
+                    </div>
                 </form> <!--form end-->
             </section> <!--post-comment-form end-->
         </section><!--blog-page-content section end-->
     </section> <!--blog-contact-main-body-->
-    <footer>
+    <footer class="blog-footer">
         <p>Copyright © 2018 HackerYou</p>
     </footer>
 </body>

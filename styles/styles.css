@@ -588,6 +588,10 @@ nav ul a:hover, nav ul a:focus {
   width: 100%;
 }
 
+.blog-contact-body {
+  margin-bottom: -450px;
+}
+
 .great-locations .great-locations-text {
   padding: 50px;
   -webkit-box-shadow: -0.5em 0.5em 0 #FDFA69;
@@ -647,10 +651,6 @@ nav ul a:hover, nav ul a:focus {
   top: -450px;
 }
 
-.blog-h3 {
-  font-size: 25px;
-}
-
 .blog-post-list li::before {
   content: "•";
   color: #4CEEA7;
@@ -661,9 +661,94 @@ nav ul a:hover, nav ul a:focus {
   padding-right: 1.5em;
 }
 
+.blog-comment-section {
+  padding: 50px 50px 50px 0;
+  margin-right: 2.5em;
+}
+.blog-comment-section .blog-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px 0;
+}
+.blog-comment-section .blog-comment .blog-comment-image-container {
+  width: 100%;
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+  padding-right: 25px;
+}
+.blog-comment-section .blog-comment .blog-comment-text-container {
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+}
+.blog-comment-section .blog-comment .blog-comment-text-container p {
+  margin-top: -5px;
+}
+
+.post-comment-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 25px;
+  margin-right: 2.5em;
+}
+.post-comment-form .form-name-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.post-comment-form .form-name-email input {
+  border: none;
+  border-bottom: 2px solid #4CEEA7;
+  background-color: #EFFDF3;
+  line-height: 3em;
+  text-indent: 1em;
+  width: 100%;
+}
+.post-comment-form .form-name-email .comment-user {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+
+.submit-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 40px;
+}
+.submit-comment textarea {
+  background-color: #EFFDF3;
+  border: 2px solid #4CEEA7;
+  border-radius: 4px;
+  line-height: 3em;
+  text-indent: 1em;
+}
+.submit-comment button {
+  margin-top: 40px;
+}
+
 a {
   text-decoration: none;
 }
 a:visited {
   color: #2C2C2C;
+}
+
+.blog-h3 {
+  font-size: 25px;
+}
+
+.blog-footer {
+  top: -450px;
 }
