@@ -378,6 +378,15 @@ nav ul a:hover, nav ul a:focus {
   height: 100vh;
   position: relative;
 }
+.blog-header .header-blog-post-image {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  bottom: -200px;
+  -webkit-box-shadow: 0 0 0 3em #FDFA69;
+          box-shadow: 0 0 0 3em #FDFA69;
+  margin: 4em 0;
+}
 
 .about {
   background-color: #EFFDF3;
