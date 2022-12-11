@@ -614,6 +614,11 @@ nav ul a:hover, nav ul a:focus {
           justify-content: space-between;
 }
 
+.blog-contact-heading {
+  margin-bottom: 0;
+  margin-top: 200px;
+}
+
 .side-info .side-info-container {
   position: relative;
   top: 80%;
@@ -651,7 +656,7 @@ nav ul a:hover, nav ul a:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-right: 25px;
-  margin-top: 100px;
+  margin-top: 30px;
   margin-right: 2.5em;
   -webkit-box-shadow: -3em 3em 0 #FDFA69;
           box-shadow: -3em 3em 0 #FDFA69;
@@ -688,7 +693,7 @@ nav ul a:hover, nav ul a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 40px 0 80px 0;
+  padding: 40px 0 40px 0;
 }
 .submit-message textarea {
   background-color: #FAFAFA;
