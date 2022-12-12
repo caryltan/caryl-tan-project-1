@@ -386,6 +386,13 @@ footer {
   }
 }
 
+a {
+  color: #2C2C2C;
+}
+a:visited {
+  color: #2C2C2C;
+}
+
 nav {
   font-size: 20px;
   font-family: "Playfair Display", serif;

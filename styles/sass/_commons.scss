@@ -138,3 +138,11 @@ nav {
         margin: 0;
     }
 }
+
+//visited link default styling
+a {
+    color: $text-color;
+    &:visited {
+        color: $text-color;
+    }
+}
