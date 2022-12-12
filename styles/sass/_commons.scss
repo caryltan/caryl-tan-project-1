@@ -29,9 +29,9 @@ button {
     padding: 5px 20px;
     a {
         text-decoration: none;
-    }
-    a:visited {
-        color: $text-color;
+        &:visited {
+            color: $text-color;
+        }
     }
 }
 
@@ -118,12 +118,5 @@ nav {
         display: none;
         padding: 0;
         margin: 0;
-    }
-}
-
-//visited links style remove
-a {
-    &:visited {
-        color: $text-color;
     }
 }
