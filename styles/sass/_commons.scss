@@ -127,6 +127,11 @@ footer {
             position: absolute;
             right: 0;
             top: 50px;
+            z-index: 1;
+            margin-top: -250px;
+        }
+        @include mobile {
+            margin-top: -275px;
         }
     }
 }

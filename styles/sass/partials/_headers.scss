@@ -11,6 +11,9 @@
     @include tablet {
         background-position: 50%;
         height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     @include mobile {
         background-position: 40%;
