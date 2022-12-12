@@ -79,6 +79,8 @@
         height: auto;
     }
     &.right-read-more {
-        flex-direction: column-reverse;
+        @include tablet {
+            flex-direction: column-reverse;
+        }
     }
 }

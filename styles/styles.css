@@ -679,11 +679,13 @@ nav ul a:hover, nav ul a:focus {
   width: 100%;
   height: auto;
 }
-.read-more.right-read-more {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+@media (max-width: 768px) {
+  .read-more.right-read-more {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 .links-section {
