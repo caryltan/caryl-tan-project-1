@@ -285,6 +285,11 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+  }
+}
 
 ul {
   list-style: none;
@@ -326,6 +331,16 @@ footer {
   background-color: #EFFDF3;
 }
 
+.blog-heading,
+.contact-heading {
+  font-size: 80px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #2C2C2C;
+  text-transform: uppercase;
+  line-height: 92px;
+}
+
 nav {
   font-size: 20px;
   font-family: "Playfair Display", serif;
@@ -361,11 +376,25 @@ nav ul a:hover, nav ul a:focus {
   height: 100vh;
   position: relative;
 }
+@media (max-width: 768px) {
+  .home-header {
+    background-position: 50%;
+    height: 50vh;
+  }
+}
 .home-header h1 {
   position: absolute;
   bottom: 25px;
   width: 100%;
   z-index: 1;
+}
+@media (max-width: 768px) {
+  .home-header h1 {
+    bottom: 220px;
+    font-size: 75px;
+    text-align: end;
+    padding-right: 40px;
+  }
 }
 .home-header .header-box-image {
   position: absolute;
@@ -375,6 +404,15 @@ nav ul a:hover, nav ul a:focus {
   -webkit-box-shadow: 0 0 0 3em #FDFA69;
           box-shadow: 0 0 0 3em #FDFA69;
   margin: 4em 0;
+}
+@media (max-width: 768px) {
+  .home-header .header-box-image {
+    width: 50%;
+    height: auto;
+    right: 0;
+    -webkit-box-shadow: 0 0 0 1em #FDFA69;
+            box-shadow: 0 0 0 1em #FDFA69;
+  }
 }
 
 .blog-page-body {
@@ -614,7 +652,7 @@ nav ul a:hover, nav ul a:focus {
           justify-content: space-between;
 }
 
-.blog-contact-heading {
+.contact-heading {
   margin-bottom: 0;
   margin-top: 200px;
 }
@@ -712,6 +750,10 @@ nav ul a:hover, nav ul a:focus {
 
 .blog-body {
   background: #EFFDF3;
+}
+
+.blog-heading {
+  margin-top: 200px;
 }
 
 .great-locations .great-locations-text {

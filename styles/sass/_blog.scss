@@ -1,9 +1,14 @@
 @use './variables' as *;
 @use  './mixins' as *;
+@use  './responsive' as *;
 
 
 .blog-body {
     background: $section-secondary;
+}
+
+.blog-heading {
+    margin-top: 200px;
 }
 
 .great-locations {

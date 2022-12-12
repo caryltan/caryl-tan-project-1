@@ -1,5 +1,6 @@
 @use  'variables' as *;
 @use  'mixins' as *;
+@use  'responsive' as *;
 
 // Headings
 h1 {
@@ -44,6 +45,9 @@ body {
 .wrapper {
     width: 80%;
     margin: 0 auto;
+    @include tablet {
+        width: 90%;
+    }
 }
 
 // ul stylings
@@ -84,4 +88,11 @@ footer {
 //Blog and Contact Page Background Colour
 .blog-contact-body {
     background-color: $section-secondary;
+}
+
+//h1s on blog and contact page
+.blog-heading,
+.contact-heading {
+    @include font-size(80px);
+    line-height: 92px;
 }

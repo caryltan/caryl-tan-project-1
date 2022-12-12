@@ -1,5 +1,6 @@
 @use '../variables' as *;
 @use  '../mixins' as *;
+@use  '../responsive' as *;
 
 .home-header {
     background-image: url(../assets/header-image.jpg);
@@ -7,11 +8,21 @@
     width: 100%;
     height: 100vh;
     position: relative;
+    @include tablet {
+        background-position: 50%;
+        height: 50vh;
+    }
     h1 {
         position: absolute;
         bottom: 25px;
         width: 100%;
         z-index: 1;
+        @include tablet {
+            bottom: 220px;
+            font-size: 75px;
+            text-align: end;
+            padding-right: 40px;
+        }
     }
     .header-box-image {
         position: absolute;
@@ -20,6 +31,12 @@
         bottom: -200px;
         box-shadow: 0 0 0 3em $box-shadow;
         margin: 4em 0;
+        @include tablet {
+            width: 50%;
+            height: auto;
+            right: 0;
+            box-shadow: 0 0 0 1em $box-shadow;
+        }
     }
 }
 

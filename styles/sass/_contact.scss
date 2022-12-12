@@ -1,5 +1,6 @@
 @use './variables' as *;
 @use  './mixins' as *;
+@use  './responsive' as *;
 
 .contact-body {
     background: $section-secondary;
@@ -10,7 +11,7 @@
     justify-content: space-between;
 }
 
-.blog-contact-heading {
+.contact-heading {
     margin-bottom: 0;
     margin-top: 200px;
 }
