@@ -1,3 +1,7 @@
+@use  '../variables' as *;
+@use  '../mixins' as *; 
+@use  '../responsive' as *;
+
 .gallery {
     padding: 75px 0;
     ul {

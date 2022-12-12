@@ -1,5 +1,6 @@
-@use '../variables' as *;
-@use '../mixins' as *;
+@use  '../variables' as *;
+@use  '../mixins' as *; 
+@use  '../responsive' as *;
 
 .links-section {
     background-color: $section-secondary;
@@ -23,9 +24,16 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        @include tablet {
+            flex-direction: column;
+            margin: 0 50px;
+        }
         li {
             flex-basis: 46%;
             padding: 50px 0;
+            @include tablet {
+                padding: 10px 0;
+            }
         }
     }
 }

@@ -1,4 +1,6 @@
-@use '../variables' as *;
+@use  '../variables' as *;
+@use  '../mixins' as *; 
+@use  '../responsive' as *;
 
 .about {
     background-color: $section-secondary;
@@ -7,5 +9,8 @@
     p {
         margin: 0 100px;
         padding-bottom: 40px;
+        @include tablet {
+            margin: 0 25px;
+        }
     }
 }
