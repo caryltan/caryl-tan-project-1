@@ -80,12 +80,22 @@
         margin: 0;
         margin-top: 250px;
     }
+    @include mobile {
+        box-shadow: -0.5em 0.5em 0 $box-shadow;
+        margin-top: 200px;
+    }
     form {
         margin: 50px;
+        @include mobile {
+            margin: 10px;
+        }
     }
     .form-name-email {
         display: flex;
         justify-content: space-between;
+        @include mobile {
+            flex-direction: column;
+        }
         input {
             border: none;
             border-bottom: 2px solid $form-border;

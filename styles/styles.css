@@ -471,6 +471,19 @@ nav ul a:hover, nav ul a:focus {
     height: 50vh;
   }
 }
+@media (max-width: 320px) {
+  .blog-page-body {
+    background-position: 50%;
+    height: 30vh;
+  }
+}
+@media (max-width: 320px) {
+  .blog-page-body h1 {
+    margin: 0;
+    font-size: 50px;
+    padding-top: 75px;
+  }
+}
 
 .blog-header .blog-contact-h1-container {
   width: 100%;
@@ -490,6 +503,18 @@ nav ul a:hover, nav ul a:focus {
   .contact-page-body {
     height: 50vh;
     background-position: 50%;
+  }
+}
+@media (max-width: 320px) {
+  .contact-page-body {
+    background-position: 33%;
+  }
+}
+@media (max-width: 320px) {
+  .contact-page-body h1 {
+    margin: 0;
+    font-size: 50px;
+    padding-top: 75px;
   }
 }
 
@@ -585,6 +610,7 @@ nav ul a:hover, nav ul a:focus {
 @media (max-width: 768px) {
   .read-more .image-section.section-left {
     bottom: 0;
+    top: -25px;
   }
 }
 .read-more .text-section {
@@ -1006,8 +1032,20 @@ nav ul a:hover, nav ul a:focus {
     margin-top: 250px;
   }
 }
+@media (max-width: 320px) {
+  .contact-form {
+    -webkit-box-shadow: -0.5em 0.5em 0 #FDFA69;
+            box-shadow: -0.5em 0.5em 0 #FDFA69;
+    margin-top: 200px;
+  }
+}
 .contact-form form {
   margin: 50px;
+}
+@media (max-width: 320px) {
+  .contact-form form {
+    margin: 10px;
+  }
 }
 .contact-form .form-name-email {
   display: -webkit-box;
@@ -1016,6 +1054,14 @@ nav ul a:hover, nav ul a:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media (max-width: 320px) {
+  .contact-form .form-name-email {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .contact-form .form-name-email input {
   border: none;
@@ -1091,6 +1137,11 @@ nav ul a:hover, nav ul a:focus {
     margin: 0;
   }
 }
+@media (max-width: 320px) {
+  .great-locations {
+    padding-top: 50px;
+  }
+}
 .great-locations .great-locations-text {
   padding: 50px;
   -webkit-box-shadow: -0.5em 0.5em 0 #FDFA69;
@@ -1115,6 +1166,11 @@ nav ul a:hover, nav ul a:focus {
     margin: 0;
   }
 }
+@media (max-width: 320px) {
+  .great-locations .great-locations-text {
+    padding-top: 20px;
+  }
+}
 .great-locations .header-blog-post-image {
   z-index: 0;
   right: 0;
@@ -1136,9 +1192,20 @@ nav ul a:hover, nav ul a:focus {
 .great-locations .blog-title {
   margin-bottom: 15px;
 }
+@media (max-width: 320px) {
+  .great-locations .blog-title {
+    line-height: 50px;
+    text-align: center;
+  }
+}
 .great-locations .blog-date {
   margin: 0;
   padding-bottom: 50px;
+}
+@media (max-width: 320px) {
+  .great-locations .blog-date {
+    padding-bottom: 25px;
+  }
 }
 
 .blog-contact-main-body {
@@ -1172,6 +1239,11 @@ nav ul a:hover, nav ul a:focus {
     margin: 20px 0;
   }
 }
+@media (max-width: 320px) {
+  .blog-contact-main-body .side-info {
+    margin-top: 150px;
+  }
+}
 .blog-contact-main-body .side-info .side-info-text {
   background-color: #FAFAFA;
   padding: 425px 25px 0 25px;
@@ -1184,6 +1256,11 @@ nav ul a:hover, nav ul a:focus {
     padding-top: 320px;
   }
 }
+@media (max-width: 320px) {
+  .blog-contact-main-body .side-info .side-info-text {
+    padding-top: 175px;
+  }
+}
 .blog-contact-main-body .side-info .side-blog-image {
   width: 95%;
   position: absolute;
@@ -1193,6 +1270,11 @@ nav ul a:hover, nav ul a:focus {
     left: 0;
     max-width: 50%;
     height: auto;
+  }
+}
+@media (max-width: 320px) {
+  .blog-contact-main-body .side-info .side-blog-image {
+    max-width: 75%;
   }
 }
 .blog-contact-main-body .side-info .blog-about {
@@ -1250,6 +1332,14 @@ nav ul a:hover, nav ul a:focus {
   display: flex;
   padding: 25px 0;
 }
+@media (max-width: 320px) {
+  .blog-comment-section .blog-comment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .blog-comment-section .blog-comment .blog-comment-image-container {
   width: 100%;
   -ms-flex-preferred-size: 10%;
@@ -1294,6 +1384,14 @@ nav ul a:hover, nav ul a:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media (max-width: 320px) {
+  .post-comment-form .form-name-email {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .post-comment-form .form-name-email input {
   border: none;

@@ -64,6 +64,17 @@
     @include tablet {
         height: 50vh;
     }
+    @include mobile {
+        background-position: 50%;
+        height: 30vh;
+    }
+    h1 {
+        @include mobile {
+            margin: 0;
+            font-size: 50px;
+            padding-top: 75px;
+        }
+    }
 }
 
 //blog page header
@@ -86,6 +97,16 @@
     @include tablet {
         height: 50vh;
         background-position: 50%;
+    }
+    @include mobile {
+        background-position: 33%;
+    }
+    h1 {
+        @include mobile {
+            margin: 0;
+            font-size: 50px;
+            padding-top: 75px;
+        }
     }
 }
 
