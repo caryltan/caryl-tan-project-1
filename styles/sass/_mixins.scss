@@ -1,4 +1,5 @@
 @use  'variables' as *;
+@use  'responsive' as *;
 
 // Basic Font
 @mixin font-size($size-value) {
@@ -19,4 +20,9 @@
     border-radius: 50%;
     margin-left: -60px;
     position: absolute;
+    @include mobile {
+      left: 58%;
+      margin-top: -80px;
+      padding: 20px;
+    }
 }

@@ -12,6 +12,9 @@
         background-position: 50%;
         height: 50vh;
     }
+    @include mobile {
+        background-position: 25%;
+    }
     h1 {
         position: absolute;
         bottom: 25px;
@@ -22,6 +25,12 @@
             font-size: 75px;
             text-align: end;
             padding-right: 40px;
+        }
+        @include mobile {
+            font-size: 50px;
+            bottom: 30px;
+            text-align: center;
+            padding: 0;
         }
     }
     .header-box-image {
@@ -36,6 +45,10 @@
             height: auto;
             right: 0;
             box-shadow: 0 0 0 1em $box-shadow;
+        }
+        @include mobile {
+            width: 75%;
+            bottom: -260px;
         }
     }
 }

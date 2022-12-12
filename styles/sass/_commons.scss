@@ -96,3 +96,27 @@ footer {
     @include font-size(80px);
     line-height: 92px;
 }
+
+//responsive nav styling
+//mobile hamburger menu
+.mobile-menu {
+    position: relative;
+    .fa-bars {
+        color: $text-color;
+        visibility: hidden;
+        @include mobile {
+            visibility: visible;
+            position: absolute;
+            right: 0;
+            top: 50px;
+        }
+    }
+}
+//mobile responsive hide nav
+nav {
+    @include mobile {
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+}

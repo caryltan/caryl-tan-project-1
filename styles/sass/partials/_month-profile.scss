@@ -1,5 +1,6 @@
 @use '../variables' as *;
 @use '../mixins' as *;
+@use  '../responsive' as *;
 
 .section-break {
     margin: 0;
@@ -7,6 +8,10 @@
         width: 100%;
         display: inline;
         vertical-align: bottom;
+        @include mobile {
+            height: 40vh;
+            width: auto;
+        }
     }
 }
 
@@ -14,8 +19,18 @@
     background-color: $section-secondary;
     padding: 100px 0;
     margin: 0;
+    @include mobile {
+        padding: 50px 0;
+    }
     .wrapper {
         display: flex;
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
     }
     .square-image {
         flex-basis: 30%;
@@ -24,6 +39,11 @@
             max-width: 300px;
             height: auto;
             box-shadow: 2em 2em 0 $box-shadow;
+            @include mobile {
+                box-shadow: 1em 1em 0 $box-shadow;
+                margin-left: 25px;
+                width: 90%;
+            }
         }
     }
     .month-text-section {

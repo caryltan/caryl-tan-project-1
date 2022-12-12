@@ -4,10 +4,16 @@
 
 .gallery {
     padding: 75px 0;
+    @include mobile {
+        padding: 30px 0;
+    }
     ul {
         display: flex;
         justify-content: space-between;
         padding: 0;
+        @include mobile {
+            flex-direction: column;
+        }
         li {
             flex-basis: 30%;
             img {

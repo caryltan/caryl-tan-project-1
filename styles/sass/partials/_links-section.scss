@@ -28,11 +28,19 @@
             flex-direction: column;
             margin: 0 50px;
         }
+        @include mobile {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
         li {
             flex-basis: 46%;
             padding: 50px 0;
             @include tablet {
                 padding: 10px 0;
+            }
+            @include mobile {
+                padding: 40px 0;
             }
         }
     }
