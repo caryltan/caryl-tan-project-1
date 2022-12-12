@@ -369,7 +369,7 @@ footer {
   color: #2C2C2C;
   visibility: hidden;
 }
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   .mobile-menu .fa-bars {
     visibility: visible;
     position: absolute;
@@ -378,7 +378,7 @@ footer {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   nav {
     display: none;
     padding: 0;

@@ -122,7 +122,7 @@ footer {
     .fa-bars {
         color: $text-color;
         visibility: hidden;
-        @include mobile {
+        @include tablet {
             visibility: visible;
             position: absolute;
             right: 0;
@@ -132,7 +132,7 @@ footer {
 }
 //mobile responsive hide nav
 nav {
-    @include mobile {
+    @include tablet {
         display: none;
         padding: 0;
         margin: 0;
