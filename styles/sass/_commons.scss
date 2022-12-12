@@ -45,6 +45,7 @@ button {
     border: none;
     padding: 5px 20px;
     a {
+        color: $text-color;
         text-decoration: none;
         &:visited {
             color: $text-color;

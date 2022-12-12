@@ -288,6 +288,7 @@ button a:visited {
   padding: 5px 20px;
 }
 .button a {
+  color: #2C2C2C;
   text-decoration: none;
 }
 .button a:visited {
