@@ -443,6 +443,12 @@ nav ul a:hover, nav ul a:focus {
   height: 100vh;
   position: relative;
 }
+@media (max-width: 768px) {
+  .contact-page-body {
+    height: 50vh;
+    background-position: 50%;
+  }
+}
 
 .blog-contact-heading {
   font-size: 80px;
@@ -754,18 +760,60 @@ nav ul a:hover, nav ul a:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .contact-main-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
 
 .contact-heading {
   margin-bottom: 0;
   margin-top: 200px;
 }
+@media (max-width: 768px) {
+  .contact-heading {
+    margin-top: 200px;
+  }
+}
 
+@media (max-width: 768px) {
+  .side-info {
+    margin-top: 25px;
+  }
+}
 .side-info .side-info-container {
   position: relative;
   top: 80%;
 }
+@media (max-width: 768px) {
+  .side-info .side-info-container {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
 .side-info .contact-info-text {
   line-height: 15px;
+}
+@media (max-width: 768px) {
+  .side-info .contact-info-text {
+    padding-bottom: 25px;
+  }
 }
 
 .contact-wrapper {
@@ -784,6 +832,11 @@ nav ul a:hover, nav ul a:focus {
   padding: 0;
   margin: 0;
 }
+@media (max-width: 768px) {
+  .social-media-icons {
+    padding-bottom: 20px;
+  }
+}
 
 .contact-form {
   background: #FAFAFA;
@@ -801,6 +854,21 @@ nav ul a:hover, nav ul a:focus {
   margin-right: 2.5em;
   -webkit-box-shadow: -3em 3em 0 #FDFA69;
           box-shadow: -3em 3em 0 #FDFA69;
+}
+@media (max-width: 768px) {
+  .contact-form {
+    -webkit-box-shadow: -1em 1em 0 #FDFA69;
+            box-shadow: -1em 1em 0 #FDFA69;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 250px;
+  }
 }
 .contact-form form {
   margin: 50px;
@@ -849,6 +917,11 @@ nav ul a:hover, nav ul a:focus {
 
 .contact-footer {
   margin-top: 200px;
+}
+@media (max-width: 768px) {
+  .contact-footer {
+    margin-top: 25px;
+  }
 }
 
 .blog-body {
