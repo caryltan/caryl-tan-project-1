@@ -428,7 +428,7 @@ nav ul a:hover, nav ul a:focus {
 }
 @media (max-width: 320px) {
   .home-header {
-    background-position: 25%;
+    background-position: 40%;
   }
 }
 .home-header h1 {
@@ -553,19 +553,47 @@ nav ul a:hover, nav ul a:focus {
   padding: 200px 0;
   text-align: center;
 }
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   .about {
     padding-bottom: 100px;
   }
 }
-.about p {
+@media (max-width: 320px) {
+  .about {
+    padding-bottom: 25px;
+  }
+}
+.about .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 320px) {
+  .about .wrapper {
+    padding-bottom: 100px;
+  }
+}
+.about .wrapper p {
   margin: 0 100px;
   padding-bottom: 40px;
 }
 @media (max-width: 768px) {
-  .about p {
+  .about .wrapper p {
     margin: 0 25px;
   }
+}
+.about .wrapper .button {
+  max-width: 250px;
 }
 
 .read-more {
