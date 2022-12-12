@@ -423,6 +423,11 @@ nav ul a:hover, nav ul a:focus {
   height: 100vh;
   position: relative;
 }
+@media (max-width: 768px) {
+  .blog-page-body {
+    height: 50vh;
+  }
+}
 
 .blog-header .blog-contact-h1-container {
   width: 100%;
@@ -853,12 +858,53 @@ nav ul a:hover, nav ul a:focus {
 .blog-heading {
   margin-top: 200px;
 }
+@media (max-width: 768px) {
+  .blog-heading {
+    margin-top: 100px;
+  }
+}
 
+@media (max-width: 768px) {
+  .great-locations {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+}
 .great-locations .great-locations-text {
   padding: 50px;
   -webkit-box-shadow: -0.5em 0.5em 0 #FDFA69;
           box-shadow: -0.5em 0.5em 0 #FDFA69;
   margin: 0 2.5em 0 -2.5em;
+}
+@media (max-width: 768px) {
+  .great-locations .great-locations-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
 }
 .great-locations .header-blog-post-image {
   z-index: 0;
@@ -868,6 +914,15 @@ nav ul a:hover, nav ul a:focus {
   margin: 0;
   width: 100%;
   height: auto;
+}
+@media (max-width: 768px) {
+  .great-locations .header-blog-post-image {
+    -webkit-box-shadow: -1em 1em 0 #FDFA69;
+            box-shadow: -1em 1em 0 #FDFA69;
+    width: 75%;
+    left: 13%;
+    position: relative;
+  }
 }
 .great-locations .blog-title {
   margin-bottom: 15px;
@@ -882,20 +937,54 @@ nav ul a:hover, nav ul a:focus {
   display: -ms-flexbox;
   display: flex;
 }
+@media (max-width: 768px) {
+  .blog-contact-main-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .blog-contact-main-body .side-info {
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
   position: relative;
   margin: 400px 195px 0 0;
 }
+@media (max-width: 768px) {
+  .blog-contact-main-body .side-info {
+    margin: 20px 0;
+  }
+}
 .blog-contact-main-body .side-info .side-info-text {
   background-color: #FAFAFA;
   padding: 425px 25px 0 25px;
   margin: 25px 0 0 150px;
 }
+@media (max-width: 768px) {
+  .blog-contact-main-body .side-info .side-info-text {
+    width: 80%;
+    margin-left: 70px;
+    padding-top: 320px;
+  }
+}
 .blog-contact-main-body .side-info .side-blog-image {
   width: 95%;
   position: absolute;
+}
+@media (max-width: 768px) {
+  .blog-contact-main-body .side-info .side-blog-image {
+    left: 0;
+    max-width: 50%;
+    height: auto;
+  }
 }
 .blog-contact-main-body .side-info .blog-about {
   padding-bottom: 25px;
@@ -923,6 +1012,28 @@ nav ul a:hover, nav ul a:focus {
 .blog-comment-section {
   padding: 50px 50px 50px 0;
   margin-right: 2.5em;
+}
+@media (max-width: 768px) {
+  .blog-comment-section {
+    margin: 0 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }
 .blog-comment-section .blog-comment {
   display: -webkit-box;
@@ -954,6 +1065,18 @@ nav ul a:hover, nav ul a:focus {
           flex-direction: column;
   padding-right: 25px;
   margin-right: 2.5em;
+}
+@media (max-width: 768px) {
+  .post-comment-form {
+    margin: 0;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .post-comment-form .form-name-email {
   display: -webkit-box;

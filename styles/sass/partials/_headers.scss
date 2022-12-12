@@ -48,6 +48,9 @@
     width: 100%;
     height: 100vh;
     position: relative;
+    @include tablet {
+        height: 50vh;
+    }
 }
 
 //blog page header
