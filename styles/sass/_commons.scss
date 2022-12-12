@@ -35,6 +35,23 @@ button {
     }
 }
 
+.button {
+    @include font-size(20px);
+    line-height: 32px;
+    letter-spacing: 1px;
+    text-align: center;
+    // background styling
+    background-color: $button;
+    border: none;
+    padding: 5px 20px;
+    a {
+        text-decoration: none;
+        &:visited {
+            color: $text-color;
+        }
+    }
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;

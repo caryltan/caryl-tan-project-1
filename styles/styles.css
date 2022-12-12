@@ -274,6 +274,26 @@ button a:visited {
   color: #2C2C2C;
 }
 
+.button {
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #2C2C2C;
+  text-transform: uppercase;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-align: center;
+  background-color: #4CEEA7;
+  border: none;
+  padding: 5px 20px;
+}
+.button a {
+  text-decoration: none;
+}
+.button a:visited {
+  color: #2C2C2C;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -875,8 +895,9 @@ nav ul a:hover, nav ul a:focus {
       flex-basis: 70%;
   padding-left: 50px;
 }
-.month-profile button {
+.month-profile .button {
   margin-top: 25px;
+  max-width: 250px;
 }
 
 .gallery {
