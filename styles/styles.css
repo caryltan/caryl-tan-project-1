@@ -398,9 +398,7 @@ nav ul a:hover, nav ul a:focus {
 }
 
 .mobile-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
