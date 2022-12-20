@@ -8,10 +8,6 @@
         width: 100%;
         display: inline;
         vertical-align: bottom;
-        @include mobile {
-            height: 40vh;
-            width: auto;
-        }
     }
 }
 
