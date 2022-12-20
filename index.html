@@ -12,7 +12,18 @@
 <body>
     <header class="home-header">
         <div class="wrapper">
-            <nav>
+            <div class="mobile-menu">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+                <nav class="mobile-closed">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#about-section">About</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav class="desktop-nav">
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="#about-section">About</a></li>
@@ -20,9 +31,6 @@
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <div class="mobile-menu">
-                <i class="fa-solid fa-bars fa-2xl"></i>
-            </div>
         </div> <!--wrapper end-->
         <h1>Captured</h1>
         <img src="./assets/header-box-image.jpg" alt="Closeup of a 18-55mm DSLR camera zoom lens" class="header-box-image">
@@ -119,5 +127,6 @@
     <footer>
         <p>Copyright © 2018 HackerYou</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>

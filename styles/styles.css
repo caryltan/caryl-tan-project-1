@@ -362,37 +362,6 @@ footer {
   line-height: 92px;
 }
 
-.mobile-menu {
-  position: relative;
-}
-.mobile-menu .fa-bars {
-  color: #2C2C2C;
-  visibility: hidden;
-}
-@media (max-width: 768px) {
-  .mobile-menu .fa-bars {
-    visibility: visible;
-    position: absolute;
-    right: 0;
-    top: 50px;
-    z-index: 1;
-    margin-top: -250px;
-  }
-}
-@media (max-width: 320px) {
-  .mobile-menu .fa-bars {
-    margin-top: -275px;
-  }
-}
-
-@media (max-width: 768px) {
-  nav {
-    display: none;
-    padding: 0;
-    margin: 0;
-  }
-}
-
 a {
   color: #2C2C2C;
 }
@@ -428,6 +397,60 @@ nav ul a:hover, nav ul a:focus {
   padding-bottom: 5px;
 }
 
+.mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 40px;
+}
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.mobile-menu .fa-bars {
+  color: #2C2C2C;
+}
+
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.mobile-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.mobile-open .fa-solid {
+  position: absolute;
+  z-index: 1;
+}
+.mobile-open .mobile-closed {
+  display: block;
+}
+@media (max-width: 320px) {
+  .mobile-open ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: right;
+  }
+}
+
+.mobile-closed {
+  display: none;
+}
+
 .home-header {
   background-image: url(../assets/header-image.jpg);
   background-size: cover;
@@ -442,12 +465,12 @@ nav ul a:hover, nav ul a:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 @media (max-width: 320px) {
@@ -884,12 +907,6 @@ nav ul a:hover, nav ul a:focus {
   width: 100%;
   display: inline;
   vertical-align: bottom;
-}
-@media (max-width: 320px) {
-  .section-break img {
-    height: 40vh;
-    width: auto;
-  }
 }
 
 .month-profile {

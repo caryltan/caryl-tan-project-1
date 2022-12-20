@@ -1,6 +1,6 @@
 @use  '../variables' as *;
 @use  '../mixins' as *; 
-
+@use  '../responsive' as *;
 
 
 nav {
@@ -21,4 +21,47 @@ nav {
             padding-bottom: 5px;
         }
     }
+}
+
+//responsive nav styling
+//mobile hamburger menu
+.mobile-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    @include tablet {
+        display: flex;
+    }
+    .fa-bars {
+        color: $text-color;
+    }
+}
+//mobile responsive hide nav
+.desktop-nav {
+    @include tablet {
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.mobile-open {
+    display: flex;
+    .fa-solid {
+        position: absolute;
+        z-index: 1;
+    }
+    .mobile-closed {
+        display: block;
+    }
+    ul {
+        @include mobile {
+            flex-direction: column;
+            text-align: right;
+        }
+    }
+}
+
+.mobile-closed {
+    display: none;
 }

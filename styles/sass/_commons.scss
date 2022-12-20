@@ -115,35 +115,6 @@ footer {
     line-height: 92px;
 }
 
-//responsive nav styling
-//mobile hamburger menu
-.mobile-menu {
-    position: relative;
-    .fa-bars {
-        color: $text-color;
-        visibility: hidden;
-        @include tablet {
-            visibility: visible;
-            position: absolute;
-            right: 0;
-            top: 50px;
-            z-index: 1;
-            margin-top: -250px;
-        }
-        @include mobile {
-            margin-top: -275px;
-        }
-    }
-}
-//mobile responsive hide nav
-nav {
-    @include tablet {
-        display: none;
-        padding: 0;
-        margin: 0;
-    }
-}
-
 //visited link default styling
 a {
     color: $text-color;
